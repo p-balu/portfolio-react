@@ -1,0 +1,159 @@
+.about {
+  display: flex;
+  padding: 4rem 0;
+}
+.aboutText {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  --color-backgroud-1: #1f1f1f;
+  --color-backgroud-2: #171717;
+  --color-text-1: #35b4a9;
+  --color-text-2: #2dcabd;
+  --color-text-3: #24a59a;
+  --color-btn-1: #f3004b;
+  --color-btn-2: #f3004b;
+  --color-btn-text: #fafafa;
+  --color-nav-background: #fffef2;
+  --color-nav-inactive: #554949;
+  --color-nav-active: #171717;
+  --color-nav-hover: #f3004b;
+  --color-nav-top: hsla(0, 0%, 12%, 0.8);
+  --color-tag: rgb(56, 56, 56);
+}
+.aboutText h1 {
+  font-size: 6rem;
+  -webkit-text-stroke: 2px #f3f3f3;
+  -webkit-text-stroke: 2px var(--color-text-1);
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: verdana;
+  font-weight: 700;
+  color: transparent;
+  writing-mode: vertical-rl;
+  animation: fadeInRight 2.5s;
+}
+
+.aboutText h1:hover {
+  --webkit-text-stroke: 2px transparent;
+  color: var(--color-text-1);
+}
+
+.image {
+  animation: fadeInLeft 1s;
+  margin-left: -80px;
+}
+
+.image img {
+  width: 115%;
+  height: 100%;
+}
+
+.container {
+  padding: 0 20px;
+  margin-left: 3%;
+}
+
+.container p {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #535353;
+  margin-top: -1px;
+  font-family: Verdana;
+  font-weight: 400;
+}
+
+.point1 {
+  animation: fadeInRight 1.5s;
+}
+.point2 {
+  animation: fadeInRight 2.5s;
+}
+.point3 {
+  animation: fadeInRight 3.5s;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.techStack {
+  padding: 0 20px;
+  margin-left: 3%;
+  font-size: 1.6rem;
+  color: black;
+  animation: fadeInUp 0.25s;
+  font-family: cursive;
+  font-weight: 600;
+}
+.stackContainer {
+  padding: 0 20px;
+  margin-left: 3%;
+}
+.techStack::before {
+  content: "-";
+  display: inline-block;
+  align-self: center;
+  color: #f3004b;
+}
+
+.stack1 {
+  display: flex;
+  padding: 0 20px;
+  margin-left: 3%;
+  width: 58%;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.stack1 span {
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: Verdana;
+  margin-left: 0.2rem;
+}
+
+.icon {
+  border: none;
+  padding: 5px;
+  width: 10rem;
+}
+
+.svgIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translatex(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translatex(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
