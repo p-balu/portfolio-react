@@ -2,6 +2,7 @@ import "./App.css";
 import Navigation from "./console/navHeader";
 import Home from "./console/home";
 import About from "./console/about";
+// import Education from "./console/education";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Navigation />
       <Home />
       <About />
+      {/* <Education /> */}
     </div>
   );
 };

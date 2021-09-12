@@ -1,32 +1,20 @@
 .about {
   display: flex;
   padding: 4rem 0;
+  margin-top: 1%;
+  font-family: Cabin, sans-serif;
 }
 .aboutText {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  --color-backgroud-1: #1f1f1f;
-  --color-backgroud-2: #171717;
-  --color-text-1: #35b4a9;
-  --color-text-2: #2dcabd;
-  --color-text-3: #24a59a;
-  --color-btn-1: #f3004b;
-  --color-btn-2: #f3004b;
-  --color-btn-text: #fafafa;
-  --color-nav-background: #fffef2;
-  --color-nav-inactive: #554949;
-  --color-nav-active: #171717;
-  --color-nav-hover: #f3004b;
-  --color-nav-top: hsla(0, 0%, 12%, 0.8);
-  --color-tag: rgb(56, 56, 56);
+  padding: 4px 0;
 }
 .aboutText h1 {
   font-size: 6rem;
   -webkit-text-stroke: 2px #f3f3f3;
-  -webkit-text-stroke: 2px var(--color-text-1);
+  -webkit-text-stroke: 2px rgb(228, 170, 72);
   text-transform: uppercase;
   line-height: 1.2;
-  font-family: verdana;
   font-weight: 700;
   color: transparent;
   writing-mode: vertical-rl;
@@ -35,12 +23,13 @@
 
 .aboutText h1:hover {
   --webkit-text-stroke: 2px transparent;
-  color: var(--color-text-1);
+  color: rgb(228, 170, 72);
 }
 
 .image {
   animation: fadeInLeft 1s;
   margin-left: -80px;
+  padding: 4px 0;
 }
 
 .image img {
@@ -59,7 +48,7 @@
   line-height: 1.6;
   color: #535353;
   margin-top: -1px;
-  font-family: Verdana;
+  font-family: Cabin, sans-serif;
   font-weight: 400;
 }
 
@@ -76,6 +65,7 @@
 .content {
   display: flex;
   flex-direction: column;
+  padding: 4px 0;
 }
 
 .techStack {
@@ -110,7 +100,6 @@
 .stack1 span {
   font-weight: 400;
   font-size: 1.2rem;
-  font-family: Verdana;
   margin-left: 0.2rem;
 }
 
@@ -156,4 +145,62 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    margin-top: 0%;
+    padding: 1rem 0;
+  }
+  .aboutText {
+    transform: none;
+    writing-mode: horizontal-tb;
+    text-align: center;
+  }
+  .aboutText h1 {
+    transform: none;
+    writing-mode: horizontal-tb;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .image {
+    display: none;
+  }
+  .container p {
+    font-size: 16px;
+  }
+
+  .svgIcon {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  .techStack {
+    font-size: 20px;
+  }
+  .stack1 {
+    width: 88%;
+  }
+  .stack1 span {
+    font-size: 9px;
+    margin-top: -10px;
+  }
+  .icon {
+    width: 5rem;
+    padding: 2px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

@@ -12,7 +12,7 @@ code {
   font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
 }
 
-.fade-in-section {
+/* .fade-in-section {
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
@@ -24,4 +24,9 @@ code {
   opacity: 1;
   transform: none;
   visibility: visible;
+} */
+
+@font-face {
+  font-family: "myFont1";
+  src: url("./fonts/RockSalt-Regular.ttf");
 }

@@ -1,13 +1,16 @@
 .home {
   display: flex;
   padding: 80px 28px;
-  background-color: #203634;
+  /* background-color: #203634; */
+  background-image: url("../Images/background3.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   color: white;
   height: 773px;
 }
 
 .typewriter {
-  width: 50%;
+  width: 40%;
   line-height: 20px;
   font-size: 1.7rem;
   display: block;
@@ -15,11 +18,12 @@
   font-weight: 700;
   height: 40%;
   padding: 18px;
+  margin: auto;
 }
 
 .dynamic-text {
   position: relative;
-  color: #35b4a9;
+  color: #e4aa48;
 }
 
 .dynamic-text:after {
@@ -35,6 +39,7 @@
   width: 50%;
   animation: fadeInRight 2.5s;
   margin: 3.5%;
+  display: none;
 }
 
 .statement {
@@ -65,20 +70,40 @@
   list-style: none;
   text-decoration: none;
   padding: 9px 15px;
-  border: 2px solid #63fff2;
+  border: 2px solid #e4aa48;
   border-radius: 100px;
-  background: #35b4a9;
-  color: #fff;
+  background: transparent;
+  color: #e4aa48;
   font-size: 16px;
   line-height: 1.2;
+  height: 20px;
   font-weight: 500;
   letter-spacing: 0;
   cursor: pointer;
+  width: 120px;
   animation: fadeInLeft 2.5s;
+  transition: width 0.5s;
+  text-align: center;
+}
+
+.arrows {
+  display: none;
+  width: 10px;
+}
+
+.button:hover .arrows {
+  display: block;
+  background-color: #e4aa48;
+  color: black;
 }
 
 .button:hover {
-  background-color: #203634;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #e4aa48;
+  color: black;
 }
 
 @keyframes fadeInRight {
@@ -116,4 +141,46 @@
   100% {
     opacity: 0;
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home {
+    height: 555px;
+  }
+  .typewriter {
+    width: 95%;
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+  .dynamic-text:after {
+    height: 15px;
+    margin-top: -2px;
+  }
+  .statement {
+    font-size: 12px;
+  }
+  .button {
+    width: 80px;
+    font-size: 12px;
+    height: 15px;
+  }
+  .button:hover .arrows {
+    display: none;
+  }
+  .button:hover {
+    width: 80px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

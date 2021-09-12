@@ -17,6 +17,10 @@
     "react-scripts": "4.0.3",
     "watchify": "^4.0.0"
   },
+  "engine": {
+    "node": "^14.15.4",
+    "npm": "^6.14.10"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

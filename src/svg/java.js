@@ -3,7 +3,7 @@ const java = () => {
     <svg
       stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
+      strokeWidth="0"
       role="img"
       viewBox="0 0 24 24"
       style={{ fill: "rgb(16, 110, 190)" }}

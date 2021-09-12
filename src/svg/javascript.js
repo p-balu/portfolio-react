@@ -3,7 +3,7 @@ const javascript = () => {
     <svg
       stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
+      strokeWidth="0"
       version="1.1"
       viewBox="0 0 32 32"
       style={{ fill: "rgb(239, 216, 29)" }}

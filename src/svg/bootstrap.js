@@ -3,7 +3,7 @@ const bootstrap = () => {
     <svg
       stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
+      strokeWidth="0"
       version="1.1"
       viewBox="0 0 34 32"
       style={{ fill: "rgb(97, 218, 251)" }}

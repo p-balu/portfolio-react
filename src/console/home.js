@@ -1,5 +1,5 @@
 import Header from "./header";
-import Svg from "../svg/main";
+// import Svg from "../svg/main";
 import "../Assets/home.css";
 
 const words = [
@@ -13,9 +13,9 @@ const Home = () => {
   return (
     <section className="home" id="home">
       <Header words={words} />
-      <div className="svg">
+      {/* <div className="svg">
         <Svg />
-      </div>
+      </div> */}
     </section>
   );
 };

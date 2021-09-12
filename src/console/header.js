@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Resume from "../Images/BaluResume.pdf";
+// import Resume from "../Images/BaluResume.pdf";
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -67,7 +67,7 @@ class Header extends Component {
       <div className="typewriter">
         <p className="text">
           Hi, my name is{" "}
-          <span style={{ color: "#35b4a9" }}>Balachander Rao Palepu</span>
+          <span style={{ color: "#e4aa48" }}>Balachander Rao Palepu</span>
         </p>
         <div className="textContainer">
           <span>I'm a </span>{" "}
@@ -77,16 +77,16 @@ class Header extends Component {
         </div>
         <p className="statement">
           A passionate individual who loves to design and create visual stories
-          that <br />
-          educate and entertain.
+          that educate and entertain.
         </p>
         <div className="buttons">
           <a href="#about" className="button">
             Know more
+            <span className="arrows">--&gt;</span>
           </a>
-          <a href={Resume} target="_blank" rel="noreferrer" className="button">
+          {/* <a href={Resume} target="_blank" rel="noreferrer" className="button">
             Download Resume
-          </a>
+          </a> */}
         </div>
       </div>
     );
