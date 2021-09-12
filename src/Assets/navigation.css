@@ -166,17 +166,122 @@
   .hamburger1 {
     display: block;
   }
-
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .navigation {
+    width: 95%;
+    padding: 1px 20px;
+    flex-direction: column;
+  }
+  .navigation1 {
+    width: 95%;
+    padding: 1px 20px;
+    flex-direction: column;
+  }
+  .name {
+    font-size: 1rem;
+  }
+  .navLinks {
+    display: none;
+  }
+  .navLinks1 {
+    display: block;
+    width: 100%;
+  }
+  .navLinks1 ul {
+    margin-left: -38px;
+    width: auto;
+  }
+
+  .hamburger,
+  .hamburger1 {
+    display: block;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .navigation {
+    width: 95%;
+    padding: 1px 20px;
+    flex-direction: column;
+  }
+  .navigation1 {
+    width: 95%;
+    padding: 1px 20px;
+    flex-direction: column;
+  }
+  .name {
+    font-size: 1.1rem;
+  }
+  .navLinks {
+    display: none;
+  }
+  .navLinks1 {
+    display: block;
+    width: 100%;
+  }
+  .navLinks1 ul {
+    margin-left: -38px;
+    width: auto;
+  }
+
+  .hamburger,
+  .hamburger1 {
+    display: block;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .navigation {
+    width: 95%;
+    padding: 1px 25px;
+    flex-direction: column;
+  }
+  .navigation1 {
+    width: 95%;
+    padding: 1px 25px;
+    flex-direction: column;
+  }
+  .name {
+    font-size: 1.25rem;
+  }
+  .navLinks {
+    display: block;
+  }
+  .navLinks1 {
+    display: none;
+  }
+
+  .hamburger,
+  .hamburger1 {
+    display: none;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .navigation {
+    width: 96%;
+    padding: 1px 25x;
+    flex-direction: column;
+  }
+  .navigation1 {
+    width: 96%;
+    padding: 1px 25px;
+    flex-direction: column;
+  }
+  .name {
+    font-size: 1.3rem;
+  }
+  .navLinks {
+    display: block;
+  }
+  .navLinks1 {
+    display: none;
+  }
+
+  .hamburger,
+  .hamburger1 {
+    display: none;
+  }
 }

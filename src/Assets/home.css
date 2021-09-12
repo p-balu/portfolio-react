@@ -174,13 +174,113 @@
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .home {
+    height: 707px;
+  }
+  .typewriter {
+    width: 80%;
+    padding: 15px;
+    font-size: 1.3rem;
+  }
+  .dynamic-text:after {
+    height: 15px;
+    margin-top: -2px;
+  }
+  .statement {
+    font-size: 14px;
+  }
+  .button {
+    width: 80px;
+    font-size: 14px;
+    height: 17px;
+  }
+  .button:hover .arrows {
+    display: none;
+  }
+  .button:hover {
+    width: 80px;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .home {
+    height: 757px;
+  }
+  .typewriter {
+    width: 75%;
+    padding: 16px;
+    font-size: 1.5rem;
+  }
+  .dynamic-text:after {
+    height: 16px;
+    margin-top: -2px;
+  }
+  .statement {
+    font-size: 16px;
+  }
+  .button {
+    width: 85px;
+    font-size: 15px;
+    height: 18px;
+  }
+  .button:hover .arrows {
+    display: none;
+  }
+  .button:hover {
+    width: 85px;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .home {
+    height: 777px;
+  }
+  .typewriter {
+    width: 60%;
+    padding: 17px;
+    font-size: 1.7rem;
+  }
+  .dynamic-text:after {
+    height: 16px;
+    margin-top: -2px;
+  }
+  .statement {
+    font-size: 18px;
+  }
+  .button {
+    width: 110px;
+  }
+  .button:hover .arrows {
+    display: block;
+  }
+  .button:hover {
+    width: 120px;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .home {
+    height: 777px;
+  }
+  .typewriter {
+    width: 50%;
+    padding: 18px;
+    font-size: 1.7rem;
+  }
+  .dynamic-text:after {
+    height: 17px;
+    margin-top: -2px;
+  }
+  .statement {
+    font-size: 19px;
+  }
+  .button {
+    width: 130px;
+  }
+  .button:hover .arrows {
+    display: block;
+  }
+  .button:hover {
+    width: 140px;
+  }
 }
