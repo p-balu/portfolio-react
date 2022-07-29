@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 const npm = () => {
   return (
     <svg

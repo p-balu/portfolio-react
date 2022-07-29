@@ -2,6 +2,8 @@ import "./App.css";
 import Navigation from "./console/navHeader";
 import Home from "./console/home";
 import About from "./console/about";
+import React, { Component } from "react";
+
 // import Education from "./console/education";
 
 const App = () => {

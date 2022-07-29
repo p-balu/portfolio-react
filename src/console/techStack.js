@@ -1,4 +1,4 @@
-import React from "../svg/react";
+import React1 from "../svg/react";
 import Html from "../svg/html";
 import Css from "../svg/css";
 import Javascript from "../svg/javascript";
@@ -13,6 +13,7 @@ import Yarn from "../svg/yarn";
 import Npm from "../svg/npm";
 import Tailwind from "../Images/tailwindcss.svg";
 import Semantic from "../Images/semantic.png";
+import React, { Component } from "react";
 
 const techStack = () => {
   return (
@@ -21,7 +22,7 @@ const techStack = () => {
       <div>
         <div className="stack1">
           <div className="icon" style={{ animation: "fadeInUp 0.5s" }}>
-            <React />
+            <React1 />
             <span> React</span>
           </div>
           <div className="icon" style={{ animation: "fadeInUp 0.75s" }}>
