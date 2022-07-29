@@ -5,7 +5,8 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Docker Hub...
-      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+      - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
+      - REPOSITORY_URI=836156348866.dkr.ecr.us-east-2.amazonaws.com/react-portoflio
   build:
     commands:
       - echo Build started on `date`
@@ -19,5 +20,3 @@ phases:
       - docker push react-portfolio:latest
       - printf '[{"name":"reactapp","imageUri":"%s"}]' $REPOSITORY_URI:latest > imagedefinitions.json
       - cat imagedefinitions.json 
-artifacts:
-    files: imagedefinitions.json
