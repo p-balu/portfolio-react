@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 // import Resume from "../Images/BaluResume.pdf";
 class Header extends Component {
   constructor(props) {
