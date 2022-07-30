@@ -1,12 +1,16 @@
 version: 0.2
 
+env:
+  variables:
+    REGION: "us-east-2"
+
 
 phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
       - aws --version
-      - aws ecr get-login-password --region REGION
+      - aws ecr get-login-password --region $REGION
       - REPOSITORY_URI=836156348866.dkr.ecr.us-east-2.amazonaws.com/react-portoflio
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
