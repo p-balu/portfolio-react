@@ -2,7 +2,7 @@ import "../Assets/about.css";
 import Image from "../Images/Balu.jpeg";
 import "font-awesome/css/font-awesome.min.css";
 import TechStack from "./techStack";
-import React, { Component } from "react";
+import React from "react";
 
 
 const About = () => {

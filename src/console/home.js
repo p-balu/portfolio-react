@@ -1,7 +1,7 @@
 import Header from "./header";
 // import Svg from "../svg/main";
 import "../Assets/home.css";
-import React, { Component } from "react";
+import React from "react";
 
 const words = [
   "Full Stack Developer .",

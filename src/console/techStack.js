@@ -13,7 +13,7 @@ import Yarn from "../svg/yarn";
 import Npm from "../svg/npm";
 import Tailwind from "../Images/tailwindcss.svg";
 import Semantic from "../Images/semantic.png";
-import React, { Component } from "react";
+import React from "react";
 
 const techStack = () => {
   return (
